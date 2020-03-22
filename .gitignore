@@ -1,3 +1,7 @@
+# Specifics:
+Kattis/src/.idea
+Kattis/src/out/production/Kattis/.idea
+
 *.class
 out/*
 .idea/*
