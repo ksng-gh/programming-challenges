@@ -140,7 +140,6 @@ def segmentDictionary(segments):
     numberDict.update({"".join(sorted([mapped[0], mapped[1], mapped[2], mapped[3], mapped[5], mapped[6]])):"9"})
     return numberDict
 
-#669 answer too low
 TASK = 1
 
 one = 0
