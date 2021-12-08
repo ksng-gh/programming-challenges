@@ -48,8 +48,13 @@ def trimSegment(retseg, otherseg):
         retseg = retseg.replace(i, "")
     return retseg
 
-
+#Takes the segment and maps them into parts
 def whySoAnnoying(segment):
+    #    0
+    #1       2
+    #    3
+    #4       5
+    #    6
     #m = all 7 segments
     m = [None] * 7
 
