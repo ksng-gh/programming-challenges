@@ -14,7 +14,7 @@ with open("input.txt", "r") as f:
 #} -> 1197
 #> -> 25137
 
-TASK = 2
+TASK = 1
 
 stack = []
 corrupt = False
