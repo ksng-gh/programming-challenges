@@ -52,7 +52,7 @@ while cases > 0:
             #If that player have no coordinates left...
             if len(pcoords[1 - player1]) == 0:
 
-                #Switch player regardless (despite hitting)
+                #Switch player regardless
                 player1 = 1 - player1
 
                 #If it is the first player's turn, then the game is over.
