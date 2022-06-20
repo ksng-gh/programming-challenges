@@ -1,6 +1,3 @@
-from tkinter import E
-
-
 tests = int(input())
 
 for i in range(tests):
