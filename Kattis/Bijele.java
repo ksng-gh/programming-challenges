@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Bijele {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
         final int KINGS = 1;
@@ -26,5 +26,6 @@ public class Bijele {
         int p = PAWNS - pawn;
 
         System.out.print(k + " " + q + " " + r + " " + b + " " + n + " " + p);
+        input.close();
     }
 }

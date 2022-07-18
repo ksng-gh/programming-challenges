@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Pet {
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
         int i = 1;
@@ -16,7 +16,7 @@ public class Pet {
 
             int fin = vote(in1, in2, in3, in4);
 
-            if(fin > tr){
+            if (fin > tr) {
                 tr = fin;
                 tr2 = i;
             }
@@ -25,11 +25,11 @@ public class Pet {
         }
         System.out.println(tr2 + " " + tr);
 
-
+        sc.close();
 
     }
 
-    public static int vote(int i, int j, int k, int l){
+    public static int vote(int i, int j, int k, int l) {
         return i + k + j + l;
     }
 

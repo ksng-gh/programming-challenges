@@ -1,14 +1,14 @@
 import java.util.Scanner;
 
 public class Tarifa {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         int megabyte = input.nextInt();
         int month = input.nextInt();
 
         int i = megabyte;
 
-        while (month > 0){
+        while (month > 0) {
             i -= input.nextInt();
             i += megabyte;
 
@@ -16,7 +16,7 @@ public class Tarifa {
         }
 
         System.out.println(i);
-
+        input.close();
     }
 
 }

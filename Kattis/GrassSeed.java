@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class GrassSeed {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         Scanner inp = new Scanner(System.in);
         double cost = inp.nextDouble();
         int lawns = inp.nextInt();
@@ -10,15 +10,16 @@ public class GrassSeed {
         double two = 0;
 
         double sum = 0;
-        while(lawns * 2 > 0){
+        while (lawns * 2 > 0) {
 
             one = inp.nextDouble();
             two = inp.nextDouble();
 
-            sum += one*two;
+            sum += one * two;
 
             lawns -= 1;
         }
         System.out.println(sum * cost);
+        inp.close();
     }
 }

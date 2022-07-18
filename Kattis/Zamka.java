@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Zamka {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         int lower = input.nextInt();
         int higher = input.nextInt();
@@ -10,15 +10,15 @@ public class Zamka {
         int retLow = 0;
         int retHi = 0;
 
-        for(int i = lower; i <= higher; i++){
-            if(giveIntAsSum(i) == target){
+        for (int i = lower; i <= higher; i++) {
+            if (giveIntAsSum(i) == target) {
                 retLow = i;
                 break;
             }
         }
 
-        for(int i = higher; i >= lower; i--){
-            if(giveIntAsSum(i) == target){
+        for (int i = higher; i >= lower; i--) {
+            if (giveIntAsSum(i) == target) {
                 retHi = i;
                 break;
             }
@@ -26,12 +26,13 @@ public class Zamka {
 
         System.out.println(retLow);
         System.out.println(retHi);
+        input.close();
     }
 
-    public static int giveIntAsSum(int i){
+    public static int giveIntAsSum(int i) {
         int added = 0;
-        while(i > 0){
-            added += i%10;
+        while (i > 0) {
+            added += i % 10;
             i /= 10;
         }
 
